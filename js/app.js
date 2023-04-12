@@ -33,12 +33,11 @@ function login(details) {
 };
 //adding a event listener to login button
 button.addEventListener(`click`, login);
-
+//defining logout button on html
 let logout_button = document.getElementById(`delete_cookie`);
-
-
+//using a function to delete login token
 function logout(details) {
     Cookies.remove(`loginToken`);
 };
-
+//adding an event listener to logout button
 logout_button.addEventListener(`click`, logout);
